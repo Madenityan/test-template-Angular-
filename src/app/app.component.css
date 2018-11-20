@@ -1,0 +1,14 @@
+.wrapper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.main-nav a {
+  font-family: 'Montserrat', sans-serif;
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}

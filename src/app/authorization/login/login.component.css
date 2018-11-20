@@ -1,0 +1,32 @@
+.wrapper-login {
+  width: 400px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background-color: #ffff;
+}
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-login  .mat-form-field {
+  width: 300px;
+}
+
+.wrapper-login h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #ff4081;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+.wrapper-btn {
+  margin-top: 15px;
+}

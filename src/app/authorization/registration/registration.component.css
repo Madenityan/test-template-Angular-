@@ -1,0 +1,29 @@
+.wrapper-registration {
+  width: 400px;
+  margin: 30px auto 0;
+  padding: 30px;
+  background-color: #ffff;
+}
+
+.wrapper-registration h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #0c0cd2;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wrapper-btn {
+  margin-top: 15px;
+}
+
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper-registration .mat-form-field {
+  width: 300px;
+}

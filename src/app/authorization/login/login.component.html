@@ -1,0 +1,18 @@
+<div class="wrapper-login">
+  <h2>Sing in</h2>
+  <form (ngSubmit)="submitLogin()" class="form-login" [formGroup]="allLoginControl">
+    <mat-form-field>
+      <label for="name">
+        <input matInput formControlName="name" name="name" type="text" placeholder="Name" id="name">
+      </label>
+    </mat-form-field>
+    <mat-form-field>
+      <label for="pass">
+        <input matInput formControlName="password" name="pass" type="password" placeholder="Password" id="pass">
+      </label>
+    </mat-form-field>
+    <div class="wrapper-btn">
+      <button mat-raised-button color="accent" type="submit">Submit</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,28 @@
+<div class="wrapper-registration">
+  <h2>Registration</h2>
+  <form (ngSubmit)="submit()" class="form-registration" [formGroup]="allControl">
+    <mat-form-field>
+      <label for="name">
+        <input matInput type="text" formControlName="name" name="name" id="name" placeholder="Name"/>
+      </label>
+    </mat-form-field>
+    <mat-form-field>
+      <label for="email">
+        <input matInput type="text" formControlName="mail" name="email" id="email" placeholder="Email"/>
+      </label>
+      </mat-form-field>
+    <mat-form-field>
+      <label for="pass">
+        <input matInput type="password" formControlName="password" name="password" id="pass" placeholder="Password"/>
+      </label>
+      </mat-form-field>
+    <mat-form-field>
+      <label for="passCon">
+        <input matInput type="password" formControlName="passwordConf" name="passwordCon" id="passCon" placeholder="Repeat the password"/>
+      </label>
+    </mat-form-field>
+    <div class="wrapper-btn">
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
