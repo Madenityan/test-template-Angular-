@@ -1,9 +1,16 @@
+<div class="top-menu">
+  <div>
+    <button class="bth-reg" mat-icon-button (click)="openRegForm()" >
+      <mat-icon>how_to_reg</mat-icon>
+    </button>
+    <button class="btn-sing-in" mat-icon-button (click)="openLoginForm()">Login</button>
+  </div>
+</div>
 <header class="wrapper-header">
   <h2>Logo</h2>
   <nav class="main-nav">
     <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/registration" routerLinkActive="active">Registration</a>
-    <a routerLink="/login" routerLinkActive="active">Login</a>
+    <a routerLink="/products" routerLinkActive="active">Products</a>
   </nav>
 </header>
 <router-outlet></router-outlet>

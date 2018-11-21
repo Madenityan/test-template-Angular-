@@ -1,8 +1,35 @@
+.top-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  background-color:#495156;
+}
+
+.bth-reg {
+  margin-right: 10px;
+}
+
+.top-menu .mat-icon {
+  color: #ffffff;
+}
+
+.btn-sing-in {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  vertical-align: middle;
+  color: #ffffff;
+  font-weight: bold;
+}
+
 .wrapper-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 10px 30px;
+}
+
+.wrapper-header h2 {
+  margin: 0;
 }
 
 .main-nav a {
@@ -11,4 +38,8 @@
   text-decoration: none;
   color: black;
   font-size: 20px;
+}
+
+.main-nav a:last-child {
+  margin-right: 0;
 }
