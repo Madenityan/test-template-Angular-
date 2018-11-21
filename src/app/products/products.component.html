@@ -1,0 +1,26 @@
+<div class="wrapper-products">
+  <div class="wrapper-sort-btn">
+    <div class="container-btn">
+      <span>Sort:</span>
+      <button mat-icon-button>
+        <mat-icon>arrow_downward</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>arrow_upward</mat-icon>
+      </button>
+    </div>
+  </div>
+  <ul class="list-products">
+    <li *ngFor="let item of listProducts">
+      <mat-card>
+        <div class="wrapper-image">
+          <img src="{{item.image}}" alt="product">
+        </div>
+        <div class="cards-info">
+          <h3>{{item.header}}</h3>
+          <span>Price: {{item.price}} $</span>
+        </div>
+      </mat-card>
+    </li>
+  </ul>
+</div>

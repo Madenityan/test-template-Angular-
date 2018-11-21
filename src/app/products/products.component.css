@@ -1,0 +1,55 @@
+.wrapper-products {
+  margin: 0 auto;
+}
+
+.list-products {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-products li {
+  list-style-type: none;
+  margin: 0 5px 10px;
+}
+
+.wrapper-image {
+  width: 150px;
+  height: 150px;
+}
+
+.cards-info {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.cards-info p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #182833;
+}
+
+.cards-info span {
+  font-size: 15px;
+  color: #ff4500;
+  font-weight: bold;
+}
+
+.wrapper-sort-btn {
+  display: flex;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.container-btn button {
+  color: #ff4500;
+}
+
+.container-btn span {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #505160;
+}
+
