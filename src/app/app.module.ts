@@ -6,7 +6,7 @@ import {
   MatInputModule,
   MatFormFieldModule,
   MatDialogModule,
-  MatIconModule, MatGridListModule
+  MatIconModule, MatGridListModule, MatPaginatorModule
 } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,6 +20,7 @@ import { RegistrationComponent } from './authorization/registration/registration
 import { LoginComponent } from './authorization/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
+import { NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,9 @@ import { ProductsComponent } from './products/products.component';
     HttpClientModule,
     MatIconModule,
     MatGridListModule,
-    OrderModule
+    OrderModule,
+    MatPaginatorModule,
+    NgxPaginationModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
