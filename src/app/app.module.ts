@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule} from './app-routing.module';
 import { HttpService } from './http.service';
 import { HttpClientModule } from '@angular/common/http';
+import { OrderModule } from 'ngx-order-pipe';
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './authorization/registration/registration.component';
@@ -41,7 +42,8 @@ import { ProductsComponent } from './products/products.component';
     MatDialogModule,
     HttpClientModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    OrderModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

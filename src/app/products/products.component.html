@@ -2,16 +2,16 @@
   <div class="wrapper-sort-btn">
     <div class="container-btn">
       <span>Sort:</span>
-      <button mat-icon-button>
+      <button mat-icon-button (click)="sortAsc()">
         <mat-icon>arrow_downward</mat-icon>
       </button>
-      <button mat-icon-button>
+      <button mat-icon-button (click)="sortDesc()">
         <mat-icon>arrow_upward</mat-icon>
       </button>
     </div>
   </div>
   <ul class="list-products">
-    <li *ngFor="let item of listProducts">
+    <li *ngFor="let item of listProducts | orderBy: order: reverse">
       <mat-card>
         <div class="wrapper-image">
           <img src="{{item.image}}" alt="product">
