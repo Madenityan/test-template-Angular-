@@ -1,17 +1,26 @@
 <div class="wrapper-products">
-  <div class="wrapper-sort-btn">
-    <div class="container-btn">
-      <span>Sort:</span>
-      <button mat-icon-button (click)="sortAsc()">
-        <mat-icon>arrow_downward</mat-icon>
-      </button>
-      <button mat-icon-button (click)="sortDesc()">
-        <mat-icon>arrow_upward</mat-icon>
-      </button>
+  <div class="wrapper-header-products">
+    <div class="wrapper-header">
+      <mat-form-field>
+        <label>
+          <input matInput type="text" [(ngModel)]="userFilter.header" placeholder="Search for"/>
+        </label>
+      </mat-form-field>
+    </div>
+    <div class="wrapper-sort-btn">
+      <div class="container-btn">
+        <span>Sort:</span>
+        <button mat-icon-button (click)="sortAsc()">
+          <mat-icon>arrow_downward</mat-icon>
+        </button>
+        <button mat-icon-button (click)="sortDesc()">
+          <mat-icon>arrow_upward</mat-icon>
+        </button>
+      </div>
     </div>
   </div>
   <ul class="list-products">
-    <li *ngFor="let item of listProducts | orderBy: order: reverse | paginate: { itemsPerPage: 12, currentPage: p }">
+    <li *ngFor="let item of listProducts | filterBy: userFilter | orderBy: order: reverse | paginate: { itemsPerPage: 12, currentPage: p}">
       <mat-card>
         <div class="wrapper-image">
           <img src="{{item.image}}" alt="product">
@@ -22,6 +31,7 @@
         </div>
       </mat-card>
     </li>
+    <li class="no-elements" *ngIf="(listProducts | filterBy: userFilter).length === 0">No elements</li>
   </ul>
   <div class="wrapper-pagination">
     <pagination-controls (pageChange)="p = $event"></pagination-controls>

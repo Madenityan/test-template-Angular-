@@ -58,3 +58,17 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.wrapper-header-products {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+
+.no-elements {
+  font-size: 15px;
+  font-weight: bold;
+  color: orangered;
+  text-transform: uppercase;
+}

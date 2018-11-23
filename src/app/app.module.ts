@@ -21,6 +21,7 @@ import { LoginComponent } from './authorization/login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { NgxPaginationModule} from 'ngx-pagination';
+import { FilterPipeModule } from 'ngx-filter-pipe';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { NgxPaginationModule} from 'ngx-pagination';
     MatGridListModule,
     OrderModule,
     MatPaginatorModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FilterPipeModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

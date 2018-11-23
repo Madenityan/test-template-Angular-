@@ -190,11 +190,14 @@ export class ProductsComponent implements OnInit {
     }
  ];
   order = 'price';
+  userFilter: any = {header: '' };
   reverse = false;
 
-  constructor() {}
+  constructor() {
+  }
+  ngOnInit() {
 
-  ngOnInit() {}
+  }
 
   sortAsc() {
     this.reverse = false;
@@ -203,4 +206,5 @@ export class ProductsComponent implements OnInit {
   sortDesc() {
     this.reverse = true;
   }
+
 }
