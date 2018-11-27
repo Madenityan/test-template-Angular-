@@ -3,7 +3,7 @@
     <div class="wrapper-header">
       <mat-form-field>
         <label>
-          <input matInput type="text" [(ngModel)]="userFilter.header" placeholder="Search for"/>
+          <input matInput type="text" [(ngModel)]="filterProducts.header" placeholder="Search for"/>
         </label>
       </mat-form-field>
     </div>
@@ -20,7 +20,7 @@
     </div>
   </div>
   <ul class="list-products">
-    <li *ngFor="let item of listProducts | filterBy: userFilter | orderBy: order: reverse | paginate: { itemsPerPage: 12, currentPage: p}">
+    <li *ngFor="let item of listProducts | filterBy: filterProducts | orderBy: order: reverse | paginate: { itemsPerPage: 12, currentPage: p}">
       <mat-card>
         <div class="wrapper-image">
           <img src="{{item.image}}" alt="product">
@@ -31,7 +31,7 @@
         </div>
       </mat-card>
     </li>
-    <li class="no-elements" *ngIf="(listProducts | filterBy: userFilter).length === 0">No elements</li>
+    <li class="no-elements" *ngIf="(listProducts | filterBy: filterProducts).length === 0">No elements</li>
   </ul>
   <div class="wrapper-pagination">
     <pagination-controls (pageChange)="p = $event"></pagination-controls>

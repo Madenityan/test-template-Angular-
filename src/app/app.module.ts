@@ -6,7 +6,7 @@ import {
   MatInputModule,
   MatFormFieldModule,
   MatDialogModule,
-  MatIconModule, MatGridListModule, MatPaginatorModule
+  MatIconModule, MatGridListModule, MatPaginatorModule, MatSelectModule
 } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -22,6 +22,8 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { NgxPaginationModule} from 'ngx-pagination';
 import { FilterPipeModule } from 'ngx-filter-pipe';
+import { ArticlesComponent } from './articles/articles.component';
+import { FilterItemsPipe } from './articles/filter-items.pipe';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
     RegistrationComponent,
     LoginComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    ArticlesComponent,
+    FilterItemsPipe
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,8 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
     OrderModule,
     MatPaginatorModule,
     NgxPaginationModule,
-    FilterPipeModule
+    FilterPipeModule,
+    MatSelectModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]

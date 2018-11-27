@@ -190,7 +190,7 @@ export class ProductsComponent implements OnInit {
     }
  ];
   order = 'price';
-  userFilter: any = {header: '' };
+  filterProducts: any = {header: '' };
   reverse = false;
 
   constructor() {

@@ -10,9 +10,9 @@
 }
 
 .list-products li {
-  list-style-type: none;
-  margin: 0 5px 10px;
-}
+   list-style-type: none;
+   margin: 0 5px 10px;
+ }
 
 .wrapper-image {
   width: 150px;
