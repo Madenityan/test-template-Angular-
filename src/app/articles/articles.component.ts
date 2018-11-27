@@ -66,7 +66,7 @@ export class ArticlesComponent implements OnInit {
     }
   ];
 
-  titleArticles: any = {title: '' };
+  titleArticles = '';
 
   constructor() { }
 

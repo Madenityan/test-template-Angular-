@@ -3,7 +3,7 @@
     <div class="wrapper-filter">
       <mat-form-field>
         <label>
-          <input matInput type="text" placeholder="Search for" [(ngModel)]="titleArticles.title"/>
+          <input matInput type="text" placeholder="Search for" [(ngModel)]="titleArticles"/>
         </label>
       </mat-form-field>
     </div>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <ul class="list-articles">
-    <li *ngFor="let article of (listArticles | filterItems: titleArticles)">
+    <li *ngFor="let article of listArticles | filterItems: titleArticles">
       <mat-card class="mat-articles">
         <div class="container-img">
           <img src="{{article.img}}">
