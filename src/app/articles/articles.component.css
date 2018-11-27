@@ -1,0 +1,52 @@
+.wrapper-articles {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.list-articles {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-articles li {
+  list-style-type: none;
+  margin: 0 5px 10px;
+}
+
+.mat-articles {
+  padding: 5px;
+  width: 170px;
+}
+
+.header-articles {
+  text-align: center;
+}
+
+.container-img {
+  width: 160px;
+  height: 200px;
+}
+
+.articles-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  color: #182833;
+  display: flex;
+  justify-content: space-around;
+}
+
+.articles-info .material-icons {
+  font-size: 13px;
+  color: gray;
+  margin-right: 5px;
+  vertical-align: initial;
+}
+
+.wrapper-header-articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+

@@ -1,0 +1,39 @@
+<div class="wrapper-articles">
+  <div class="wrapper-header-articles">
+    <div class="wrapper-filter">
+      <mat-form-field>
+        <label>
+          <input matInput type="text" placeholder="Search for" [(ngModel)]="titleArticles.title"/>
+        </label>
+      </mat-form-field>
+    </div>
+    <div class="wrapper-sort">
+      <mat-form-field>
+        <mat-select placeholder="Sort the contents">
+          <mat-option value="1">by the number of comments</mat-option>
+          <mat-option value="2">by date</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <ul class="list-articles">
+    <li *ngFor="let article of (listArticles | filterItems: titleArticles)">
+      <mat-card class="mat-articles">
+        <div class="container-img">
+          <img src="{{article.img}}">
+        </div>
+        <div class="header-articles">
+          <h3>{{article.title}}</h3>
+        </div>
+        <div class="articles-info">
+          <p><i class="material-icons">
+            query_builder
+          </i>{{article.date}}</p>
+          <p><i class="material-icons">
+          insert_comment
+          </i>{{article.comments}}</p>
+        </div>
+      </mat-card>
+    </li>
+  </ul>
+</div>
