@@ -8,12 +8,15 @@
       </mat-form-field>
     </div>
     <div class="wrapper-sort">
-      <mat-form-field>
-        <mat-select placeholder="Sort the contents">
-          <mat-option value="1">by the number of comments</mat-option>
-          <mat-option value="2">by date</mat-option>
-        </mat-select>
-      </mat-form-field>
+      <div class="container-btn">
+        <span>Sort:</span>
+        <button mat-icon-button (click)="sortAsc()">
+          <mat-icon>arrow_downward</mat-icon>
+        </button>
+        <button mat-icon-button (click)="sortDesc()">
+          <mat-icon>arrow_upward</mat-icon>
+        </button>
+      </div>
     </div>
   </div>
   <ul class="list-articles">
@@ -35,5 +38,6 @@
         </div>
       </mat-card>
     </li>
+    <li class="no-elements" *ngIf="(listArticles | filterItems: titleArticles).length === 0">No elements</li>
   </ul>
 </div>

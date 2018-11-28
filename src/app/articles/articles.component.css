@@ -47,6 +47,12 @@
 .wrapper-header-articles {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-
+.no-elements {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #FF4500;
+  font-weight: bold;
+}
