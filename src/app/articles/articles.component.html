@@ -21,7 +21,7 @@
   </div>
   <ul class="list-articles">
     <li *ngFor="let article of listArticles | filterItems: titleArticles">
-      <mat-card class="mat-articles">
+      <mat-card class="mat-articles" (click)="redirect()">
         <div class="container-img">
           <img src="{{article.img}}">
         </div>

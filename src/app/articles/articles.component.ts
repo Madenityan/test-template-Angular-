@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-articles',
@@ -9,6 +10,7 @@ export class ArticlesComponent implements OnInit {
 
   public listArticles = [
     {
+      url: '',
       img: 'http://placehold.it/160x200',
       title: 'Some info',
       date: '20.05.2018',
@@ -68,7 +70,7 @@ export class ArticlesComponent implements OnInit {
 
   titleArticles = '';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -95,5 +97,9 @@ export class ArticlesComponent implements OnInit {
       }
       return 0;
     });
+  }
+
+  redirect() {
+    this.router.navigate(['/articles/articles-deployed/best-prices']);
   }
 }

@@ -24,6 +24,7 @@ import { NgxPaginationModule} from 'ngx-pagination';
 import { FilterPipeModule } from 'ngx-filter-pipe';
 import { ArticlesComponent } from './articles/articles.component';
 import { FilterItemsPipe } from './articles/filter-items.pipe';
+import { ArticleBestPricesComponent } from './articles/articles-deployed/article-best-prices/article-best-prices.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FilterItemsPipe } from './articles/filter-items.pipe';
     HomeComponent,
     ProductsComponent,
     ArticlesComponent,
-    FilterItemsPipe
+    FilterItemsPipe,
+    ArticleBestPricesComponent
   ],
   imports: [
     BrowserModule,

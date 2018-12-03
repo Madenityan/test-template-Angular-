@@ -56,3 +56,7 @@
   color: #FF4500;
   font-weight: bold;
 }
+
+.list-articles mat-card {
+  cursor: pointer;
+}

@@ -6,6 +6,7 @@ import { LoginComponent } from './authorization/login/login.component';
 import {HomeComponent} from './home/home.component';
 import {ProductsComponent} from './products/products.component';
 import {ArticlesComponent} from './articles/articles.component';
+import {ArticleBestPricesComponent} from './articles/articles-deployed/article-best-prices/article-best-prices.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'products', component: ProductsComponent},
   { path: 'articles', component: ArticlesComponent},
+  { path: 'articles/articles-deployed/best-prices', component: ArticleBestPricesComponent}
 ];
 
 @NgModule({
