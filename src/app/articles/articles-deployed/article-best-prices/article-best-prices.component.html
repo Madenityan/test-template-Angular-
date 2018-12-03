@@ -1,0 +1,47 @@
+<div class="wrapper-article-best-prices">
+  <article>
+    <header>
+      <h3 class="title">Best prices</h3>
+    </header>
+    <img src="http://placehold.it/160x200" class="leftImg" alt="some-img">
+    <p class="text-top">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a volutpat nunc. Fusce at eleifend mi, sit amet aliquam eros. Donec eu cursus felis.
+      Vestibulum maximus malesuada odio eget tincidunt.
+      Nunc mi ante, auctor eu posuere eget, feugiat et neque.
+      Etiam tincidunt laoreet eleifend. In at libero vel arcu commodo sodales ut sit amet lectus.
+      Nam ut consequat justo. Curabitur quam ipsum, mollis ac varius nec, hendrerit sit amet eros.
+      Duis pulvinar ultrices ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et enim dolor. Vivamus commodo ipsum dui, id posuere diam malesuada consectetur.
+      Fusce elit ex, volutpat non dolor sed, fermentum tempor dolor. Sed quis tempus ex. Cras ornare convallis purus a fermentum. Nulla et nisi nisi. Fusce nisl turpis, gravida quis luctus sit amet, ultrices a sapien. Ut posuere vel neque non scelerisque. Sed sollicitudin lacus id metus suscipit imperdiet.
+      Vestibulum pellentesque tristique velit, non pretium eros congue in. Curabitur ut enim tellus. Morbi vitae ligula dapibus, vehicula diam ultricies, ultricies ipsum. Donec consequat mollis diam, nec elementum mi aliquet nec. Integer ullamcorper eleifend diam. Etiam pellentesque fringilla pretium. Quisque commodo, massa vitae hendrerit accumsan, massa elit scelerisque nisl, vel pellentesque dolor velit faucibus turpis. Donec sed lorem porttitor, aliquet eros id, sollicitudin justo. Vivamus a diam et augue feugiat aliquet.
+    </p>
+    <img src="http://placehold.it/200x100" class="rightImg" alt="some-img">
+    <p class="text-bottom">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a volutpat nunc.
+      Fusce at eleifend mi, sit amet aliquam eros. Donec eu cursus felis. Vestibulum maximus malesuada odio eget tincidunt.
+      Nunc mi ante, auctor eu posuere eget, feugiat et neque. Etiam tincidunt laoreet eleifend.
+      In at libero vel arcu commodo sodales ut sit amet lectus.
+      Nam ut consequat justo. Curabitur quam ipsum, mollis ac varius nec, hendrerit sit amet eros. Duis pulvinar ultrices ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec et enim dolor. Vivamus commodo ipsum dui, id posuere diam malesuada consectetur.
+      Fusce elit ex, volutpat non dolor sed, fermentum tempor dolor.  Fusce elit ex, volutpat non dolor sed, fermentum tempor dolor.
+    </p>
+    <footer>
+      <cite>Author: Ban Master</cite>
+    </footer>
+  </article>
+  <div class="comments-users">
+    <h3 class="title">Comments</h3>
+    <form [formGroup]="form" (submit)="submit()" class="form-comments">
+      <mat-form-field>
+        <textarea matInput placeholder="Leave a comment" formControlName="comment"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Add comment</button>
+    </form>
+    <div *ngFor="let newComment of comments" class="wrapper-comments">
+      <mat-card>
+        <ul class="list-comments">
+          <li>
+            <p>{{newComment}}</p>
+          </li>
+        </ul>
+      </mat-card>
+    </div>
+  </div>
+</div>

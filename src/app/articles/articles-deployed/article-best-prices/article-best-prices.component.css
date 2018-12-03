@@ -1,0 +1,60 @@
+.wrapper-article-best-prices {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.wrapper-article-best-prices article {
+  margin-bottom: 30px;
+}
+
+.leftImg {
+  float: right;
+  padding-left: 25px;
+}
+
+.text-top, .text-bottom {
+  text-align: justify;
+  color: #434b4f;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.rightImg {
+  float: left;
+}
+
+.rightImg {
+  padding-right: 25px;
+}
+
+.title {
+  font-size: 18px;
+  color: orangered;
+  text-transform: uppercase;
+}
+
+.form-comments mat-form-field {
+  width: 50%;
+  display: block;
+}
+
+.list-comments li {
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.wrapper-comments {
+  margin-top: 30px;
+}
+
+.wrapper-comments mat-card {
+  width: 60%;
+  padding: 5px 10px;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.wrapper-comments mat-card:nth-child(even) {
+ background-color: red;
+}
