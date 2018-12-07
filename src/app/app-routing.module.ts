@@ -8,10 +8,11 @@ import {ProductsComponent} from './products/products.component';
 import {ArticlesComponent} from './articles/articles.component';
 import {ArticleBestPricesComponent} from './articles/articles-deployed/article-best-prices/article-best-prices.component';
 import {AuthGuard} from './guards/auth.guard';
+import {ExitGuard} from './guards/exit.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'registration', component: RegistrationComponent},
+  { path: 'registration', component: RegistrationComponent, canDeactivate: [ExitGuard]},
   { path: 'login', component: LoginComponent},
   { path: 'home', component: HomeComponent},
   { path: 'products', component: ProductsComponent, canActivate: [AuthGuard]},

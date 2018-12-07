@@ -26,6 +26,7 @@ import { FilterPipeModule } from 'ngx-filter-pipe';
 import { ArticlesComponent } from './articles/articles.component';
 import { FilterItemsPipe } from './articles/filter-items.pipe';
 import { ArticleBestPricesComponent } from './articles/articles-deployed/article-best-prices/article-best-prices.component';
+import {ExitGuard} from './guards/exit.guard';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,7 @@ import { ArticleBestPricesComponent } from './articles/articles-deployed/article
     FilterPipeModule,
     MatSelectModule
   ],
-  providers: [HttpService,  AuthGuard],
+  providers: [HttpService,  AuthGuard, ExitGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
