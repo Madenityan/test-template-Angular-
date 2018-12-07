@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
         this.user = data;
         this.saveToken(data);
         this.allLoginControl.reset();
-        this.router.navigate(['/home']);
+        this.router.navigate(['/products']);
       });
   }
 }

@@ -14,6 +14,7 @@ import { AppRoutingModule} from './app-routing.module';
 import { HttpService } from './http.service';
 import { HttpClientModule } from '@angular/common/http';
 import { OrderModule } from 'ngx-order-pipe';
+import { AuthGuard} from './guards/auth.guard';
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './authorization/registration/registration.component';
@@ -57,7 +58,7 @@ import { ArticleBestPricesComponent } from './articles/articles-deployed/article
     FilterPipeModule,
     MatSelectModule
   ],
-  providers: [HttpService],
+  providers: [HttpService,  AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
