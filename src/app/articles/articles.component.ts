@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-articles',
@@ -8,8 +8,10 @@ import {Router} from '@angular/router';
 })
 export class ArticlesComponent implements OnInit {
 
+  id: string;
   public listArticles = [
     {
+      id: 'Some info',
       url: '',
       img: 'http://placehold.it/160x200',
       title: 'Some info',
@@ -18,6 +20,7 @@ export class ArticlesComponent implements OnInit {
       likes: 300
     },
     {
+      id: 'Lorem Ipsum',
       img: 'http://placehold.it/160x200',
       title: 'Lorem Ipsum',
       date: '11-11-2016',
@@ -25,6 +28,7 @@ export class ArticlesComponent implements OnInit {
       likes: 40
     },
     {
+      id: 'Products sale',
       img: 'http://placehold.it/160x200',
       title: 'Products sale',
       date: '01-08-2017',
@@ -32,6 +36,7 @@ export class ArticlesComponent implements OnInit {
       likes: 690
     },
     {
+      id: 'Best prices',
       img: 'http://placehold.it/160x200',
       title: 'Best prices',
       date: '12-04-2018',
@@ -39,6 +44,7 @@ export class ArticlesComponent implements OnInit {
       likes: 234
     },
     {
+      id: 'New items',
       img: 'http://placehold.it/160x200',
       title: 'New items',
       date: '12-07-2018',
@@ -46,6 +52,7 @@ export class ArticlesComponent implements OnInit {
       likes: 247
     },
     {
+      id: 'Sale',
       img: 'http://placehold.it/160x200',
       title: 'Sale',
       date: '12-07-2018',
@@ -53,6 +60,7 @@ export class ArticlesComponent implements OnInit {
       likes: 437
     },
     {
+      id: 'Some info',
       img: 'http://placehold.it/160x200',
       title: 'Some info',
       date: '20-05-2018',
@@ -60,6 +68,7 @@ export class ArticlesComponent implements OnInit {
       likes: 300
     },
     {
+      id: 'Lorem Ipsum',
       img: 'http://placehold.it/160x200',
       title: 'Lorem Ipsum',
       date: '11-11-2016',
@@ -70,7 +79,8 @@ export class ArticlesComponent implements OnInit {
 
   titleArticles = '';
 
-  constructor(private router: Router) { }
+  constructor(private activateRoute: ActivatedRoute, private router: Router) {
+  }
 
   ngOnInit() {
   }
@@ -98,7 +108,6 @@ export class ArticlesComponent implements OnInit {
       return 0;
     });
   }
-
   redirect() {
     this.router.navigate(['/articles/articles-deployed/best-prices']);
   }

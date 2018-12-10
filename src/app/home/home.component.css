@@ -1,5 +1,20 @@
 .wrapper-home {
-  width: 400px;
   margin: 0 auto;
   text-align: center;
+}
+
+.wrapper-home button {
+  margin-bottom: 30px;
+}
+
+.wrapper-home div {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #5380d2;
+  opacity: 0.6;
+  width: 50%;
+}
+
+#contentTwo {
+  background-color: darkcyan;
 }
